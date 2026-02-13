@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
-required 
+
 export default function Contact() {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
