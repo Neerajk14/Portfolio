@@ -1,33 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
 
 *{
   font-family: "Poppins", sans-serif;
 }
 
-@import "tailwindcss";
-
 html{
   scroll-behavior: smooth;
 }
 
-@theme{
-  --animate-blob: blob 8s infinite;
-
-  @keyframes blob {
-    0% {
-      transform: translate(0px, 0px) scale(1);
-    }
-    33% {
-      transform: translate(30px, -50px) scale(1.1);
-    }
-    66% {
-      transform: translate(-20px, 20px) scale(0.9);
-    }
-    100% {
-      transform: translate(0px, 0px) scale(1);
-    }
-  }
-}
+ 
 
 @keyframes slide {
   0% {
@@ -40,8 +22,8 @@ html{
 }
 
 .animate-slide {
-  animation: slide 20s linear infinite;
-}
+  animation: slide 30s linear infinite;
+  }
 .animate-slide:hover {
   animation-play-state: paused;
 }
