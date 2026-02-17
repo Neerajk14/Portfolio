@@ -1,7 +1,7 @@
 import React from "react";
 import { projects } from "../../Data/Data";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 export default function Work() {
   const [selectedProject ,setSelectedProject] =useState(null);
 
@@ -26,11 +26,14 @@ setSelectedProject(null);
           and experience in various technology
         </p>
       </div>
-        <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <motion.div initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false, amount: 0.2 }} className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project)=>(
             <div key={project.id}
             onClick={()=> handleOpenModel(project)}
-            className="border border-white bg-gray-900 badrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500 hover:-translate-y-2 transition-transform duration-300 ">
+            className="border border-white bg-gray-900 badrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-transform duration-300 ">
               <div className="p-4">
                 <img src={project.img} alt={project.title} className="w-full h-60 object-cover" />
               </div>
@@ -49,7 +52,7 @@ setSelectedProject(null);
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
 
   {selectedProject&&(
     <div className=" fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 ">
