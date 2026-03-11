@@ -21,7 +21,7 @@ import compass from "../assetsLogo/mc.png";
 import firebase from "../assetsLogo/firebase.png"
 // project img logos
 import vegabondingImage from "../assets/Screenshot 2026-02-12 142519.png";
-
+import Job_ready_Image  from "../assets/Screenshot 2026-03-11 142318.png";
 export const skills = [
   {
     title: "Frontend Development",
@@ -81,6 +81,15 @@ export const projects = [
     img: vegabondingImage,
     github: "https://github.com/Neerajk14/VegaBonding-fullstack.git",
     webapp: "https://vegabonding.onrender.com/listings",
+  },
+  {
+    id: 1,
+    title: "Job-Ready",
+    tags:["React Js","JavaScript","Node.js","Express.js","MongoDb","Scss","MongoDb Atlas","Jwt","Cors"],
+    description:"An intelligent interview preparation platform that evaluates your resume and job description to generate a job match score, identify skill gaps, provide a personalized learning roadmap, and suggest behavioral interview questions with a preparation strategy.",
+    img: Job_ready_Image,
+    github: "https://github.com/Neerajk14/Interview-preparation-frontend.git",
+    webapp: "https://jobready-opal.vercel.app/",
   },
 ];
 
