@@ -20,7 +20,7 @@ import vsCode from "../assetsLogo/vscode.png";
 import compass from "../assetsLogo/mc.png";
 import firebase from "../assetsLogo/firebase.png"
 // project img logos
-import vegabondingImage from "../assets/Screenshot 2026-02-12 142519.png";
+import vegabondingImage from "../assets/Screenshot 2026-03-22 154437.png";
 import Job_ready_Image  from "../assets/Screenshot 2026-03-11 142318.png";
 export const skills = [
   {
