@@ -80,7 +80,7 @@ export const projects = [
     description:"A scalable full-stack accommodation booking platform built with modern web technologies, enabling seamless property listing and secure reservations.",
     img: vegabondingImage,
     github: "https://github.com/Neerajk14/VegaBonding-fullstack.git",
-    webapp: "https://vegabonding.up.railway.app/listings",
+    webapp: "https://vegabonding.onrender.com/listings",
   },
   {
     id: 1,
