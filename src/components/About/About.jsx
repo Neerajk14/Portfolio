@@ -46,7 +46,7 @@ export default function About() {
             sharpening my skills.
           </p>
           <a
-            href="https://drive.google.com/file/d/19H188v887IEUkiG1ddnKv-uRco9VAzZ2/view?usp=sharing"
+            href="https://drive.google.com/file/d/15sqwwSQI1SbOiekVqVpjc-TW5t6Eoz_N/view?usp=sharing"
             target="_blank"
             className="inline-block text-white bg-[#8245ec] py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             
